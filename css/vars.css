@@ -1,4 +1,4 @@
 :root{
-    --main-font:'Roboto', sans-serif;
+    --main-font:'Roboto',serif, sans-serif;
     --focus-color:#1abc9c;
 }
