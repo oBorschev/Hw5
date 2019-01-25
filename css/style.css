@@ -1,4 +1,5 @@
 @import "/css/vars.css";
+
 html{
     box-sizing: border-box;
 }
@@ -27,8 +28,7 @@ li{
 .text-slider,
 .header-section,
 .product-item-title,
-.product-item-price,
-.overlay-addtocart {
+.product-item-price {
     text-transform: uppercase;
 }
 /* Header */
@@ -191,11 +191,13 @@ li{
 .section-item:hover .card-overlay{
     display: block;
 }
-.overlay-icon-link:hover{
+.overlay-icon-btn:hover{
     background-color: var(--focus-color);
+    cursor: pointer;
 }
-.overal-icon-link-cart:hover{
+.overlay-icon-btn-cart:hover{
     background-color:rgba(127, 217, 199,.3);
+    cursor: pointer;
 }
 .section-item:last-child{
     margin-right: 0;
@@ -256,16 +258,19 @@ li{
 .overlay-icon-item:nth-child(3n){
     margin-right: 0;
 }
-.overlay-icon-link{
+.overlay-icon-btn{
     width: 48px;
 }
-.overal-icon-link-cart,
-.overlay-icon-link {
+.overlay-icon-btn-cart,
+.overlay-icon-btn {
     display: block;
     border-width: 1px;
     border-color: rgb(255, 255, 255);
     border-style: solid;
     height: 48px;
+}
+.overlay-icon-btn-cart{
+    width: 163px;
 }
 .like{
     background: url(/img/icon-like.png) no-repeat center center;
@@ -276,10 +281,8 @@ li{
 .clock{
     background: url(/img/icon-clock.png) no-repeat center center;
 }
-.overlay-addtocart {
-    width: 163px;
-    background: url(/img/icon-cart.png) no-repeat;
-    background-position: 13px center;
+.overlay-icon-btn-cart {
+    background: url(/img/icon-cart.png) no-repeat center center;
     background-color: rgb(50, 50, 50);
 }
 /* Footer */
